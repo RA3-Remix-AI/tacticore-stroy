@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+import struct
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -45,6 +46,30 @@ def main():
         for relative in commander['assets'].values():
             asset_path(relative)
             referenced.add(relative)
+        turnarounds = commander.get('turnarounds')
+        if turnarounds:
+            if set(turnarounds['periods']) != {'young', 'active', 'veteran'}:
+                raise ValueError(f'Incomplete turnaround periods for {identifier}')
+            if turnarounds['view_order'] != ['front', 'left', 'back']:
+                raise ValueError(f'Unexpected turnaround view order for {identifier}')
+            for key in ('index', 'prompts'):
+                document = (ROOT / turnarounds[key]).resolve()
+                if not document.is_relative_to(ROOT / 'docs') or not document.is_file():
+                    raise ValueError(f'Missing or invalid turnaround document: {turnarounds[key]}')
+            for period, sheet in turnarounds['periods'].items():
+                relative = sheet['image']
+                path = asset_path(relative)
+                with path.open('rb') as stream:
+                    header = stream.read(24)
+                if len(header) != 24 or header[:8] != b'\x89PNG\r\n\x1a\n':
+                    raise ValueError(f'Invalid turnaround PNG: {relative}')
+                dimensions = struct.unpack('>II', header[16:24])
+                if dimensions != (sheet['width'], sheet['height']):
+                    raise ValueError(f'Turnaround dimensions mismatch: {relative}')
+                referenced.add(relative)
+            for relative in turnarounds.get('archived_images', []):
+                asset_path(relative)
+                referenced.add(relative)
     if set(profiles) != {video['id'] for video in manifest['videos']}:
         raise ValueError('Catalog and generation manifest commander IDs differ')
     for video in manifest['videos']:

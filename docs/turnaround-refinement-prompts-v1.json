@@ -1,0 +1,22 @@
+[
+  {
+    "id": "hammer",
+    "period": "young",
+    "prompt": "Edit this character turnaround sheet. CHANGE ONLY AGE APPEARANCE of the same character consistently across all three views: 26-year-old adult man, clean-shaven, smooth youthful cheeks and forehead, dark brown hair with ZERO grey, slightly fuller youthful face; keep his recognizable nose, eye spacing and jaw. The existing face incorrectly looks 40; replace the face in BOTH front and profile views with a truly youthful adult likeness. Keep gender, outfit, pose, lighting, layout, labels, grey backdrop and every other element unchanged. Photoreal cinematic CG reference sheet. Clearly communicate the requested age while retaining identity. No new props, no additional figures."
+  },
+  {
+    "id": "hammer",
+    "period": "veteran",
+    "prompt": "Edit this character turnaround sheet. CHANGE ONLY AGE APPEARANCE of the same character consistently across all three views: 62-year-old man, predominantly SILVER-GREY hair on ALL views and silver short beard, visibly deep forehead and eye wrinkles and aged neck; retain exact facial bone structure. The existing face looks too young; make aging clearly visible. Keep gender, outfit, pose, lighting, layout, labels, grey backdrop and every other element unchanged. Photoreal cinematic CG reference sheet. Clearly communicate the requested age while retaining identity. No new props, no additional figures."
+  },
+  {
+    "id": "bastion",
+    "period": "veteran",
+    "prompt": "Edit this character turnaround sheet. CHANGE ONLY AGE APPEARANCE of the same character consistently across all three views: 68-year-old Black woman, predominantly WHITE-SILVER short curls visible in ALL views, deeper natural forehead and eye wrinkles, aged neck and more mature face; preserve her brown skin and exact facial bone structure. Not merely one grey lock: most hair must be silver-white. Keep gender, outfit, pose, lighting, layout, labels, grey backdrop and every other element unchanged. Photoreal cinematic CG reference sheet. Clearly communicate the requested age while retaining identity. No new props, no additional figures."
+  },
+  {
+    "id": "ghost",
+    "period": "veteran",
+    "prompt": "Edit this character turnaround sheet. CHANGE ONLY AGE APPEARANCE of the same character consistently across all three views: 48-year-old East Asian woman, clearly visible silver streak through the dark asymmetrical bob in ALL three views, natural crow's-feet, subtle forehead lines and mature cheeks and neck, still fit and composed. Preserve her facial bone structure and eye shape, remove youthful beauty smoothing. Keep gender, outfit, pose, lighting, layout, labels, grey backdrop and every other element unchanged. Photoreal cinematic CG reference sheet. Clearly communicate the requested age while retaining identity. No new props, no additional figures."
+  }
+]

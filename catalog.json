@@ -1,7 +1,7 @@
 {
   "name": "tacticore-stroy",
-  "description": "弈核指挥官视频与视觉资源项目",
-  "schema_version": 1,
+  "description": "弈核 / Remix-AI 故事蓝本、指挥官 CG 资产与 Mod 叙事输入项目",
+  "schema_version": 2,
   "created_at": "2026-10-28",
   "commanders": [
     {
@@ -27,6 +27,57 @@
         "source_video": "assets/commanders/hammer/motion-source.mp4",
         "image_prompt": "assets/commanders/hammer/image-prompt.txt",
         "motion_prompt": "assets/commanders/hammer/motion-prompt.txt"
+      },
+      "faction": "苏联",
+      "formal_name": "维克托·莫罗佐夫",
+      "formal_name_english": "Viktor Morozov",
+      "formal_name_status": "confirmed",
+      "visual_gender": "male",
+      "turnarounds": {
+        "version": "v1",
+        "status": "visual_draft",
+        "story_status": "not_final",
+        "index": "docs/turnarounds-v1.md",
+        "prompts": "docs/turnaround-prompts-v1.json",
+        "view_order": [
+          "front",
+          "left",
+          "back"
+        ],
+        "periods": {
+          "young": {
+            "label": "青年军官",
+            "image": "assets/commanders/hammer/turnarounds/v1/young-r2.png",
+            "width": 1536,
+            "height": 1024
+          },
+          "active": {
+            "label": "现役指挥官",
+            "image": "assets/commanders/hammer/turnarounds/v1/active.png",
+            "width": 1536,
+            "height": 1024
+          },
+          "veteran": {
+            "label": "资深指挥官",
+            "image": "assets/commanders/hammer/turnarounds/v1/veteran-r2.png",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        "archived_images": [
+          "assets/commanders/hammer/turnarounds/v1/young.png",
+          "assets/commanders/hammer/turnarounds/v1/veteran.png"
+        ],
+        "refinement_prompts": "docs/turnaround-refinement-prompts-v1.json",
+        "generator": "Codex built-in ImageGen"
+      },
+      "story": {
+        "status": "confirmed",
+        "identity": "human_ai_hybrid",
+        "origin": "professional_soldier",
+        "ai_role": "decision_support",
+        "implant": "ai_compute_chip",
+        "visual_period_mapping_status": "pending"
       }
     },
     {
@@ -52,6 +103,56 @@
         "source_video": "assets/commanders/bastion/motion-source.mp4",
         "image_prompt": "assets/commanders/bastion/image-prompt.txt",
         "motion_prompt": "assets/commanders/bastion/motion-prompt.txt"
+      },
+      "faction": "盟军",
+      "formal_name": null,
+      "formal_name_english": null,
+      "formal_name_status": "pending",
+      "visual_gender": "female",
+      "turnarounds": {
+        "version": "v1",
+        "status": "visual_draft",
+        "story_status": "not_final",
+        "index": "docs/turnarounds-v1.md",
+        "prompts": "docs/turnaround-prompts-v1.json",
+        "view_order": [
+          "front",
+          "left",
+          "back"
+        ],
+        "periods": {
+          "young": {
+            "label": "青年军官",
+            "image": "assets/commanders/bastion/turnarounds/v1/young.png",
+            "width": 1536,
+            "height": 1024
+          },
+          "active": {
+            "label": "现役指挥官",
+            "image": "assets/commanders/bastion/turnarounds/v1/active.png",
+            "width": 1536,
+            "height": 1024
+          },
+          "veteran": {
+            "label": "资深指挥官",
+            "image": "assets/commanders/bastion/turnarounds/v1/veteran-r2.png",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        "archived_images": [
+          "assets/commanders/bastion/turnarounds/v1/veteran.png"
+        ],
+        "refinement_prompts": "docs/turnaround-refinement-prompts-v1.json",
+        "generator": "Codex built-in ImageGen"
+      },
+      "story": {
+        "status": "confirmed",
+        "identity": "human_ai_hybrid",
+        "origin": "professional_soldier",
+        "ai_role": "decision_support",
+        "implant": "ai_compute_chip",
+        "visual_period_mapping_status": "pending"
       }
     },
     {
@@ -77,7 +178,59 @@
         "source_video": "assets/commanders/ghost/motion-source.mp4",
         "image_prompt": "assets/commanders/ghost/image-prompt.txt",
         "motion_prompt": "assets/commanders/ghost/motion-prompt.txt"
+      },
+      "faction": "升阳",
+      "formal_name": null,
+      "formal_name_english": null,
+      "formal_name_status": "pending",
+      "visual_gender": "female",
+      "turnarounds": {
+        "version": "v1",
+        "status": "visual_draft",
+        "story_status": "not_final",
+        "index": "docs/turnarounds-v1.md",
+        "prompts": "docs/turnaround-prompts-v1.json",
+        "view_order": [
+          "front",
+          "left",
+          "back"
+        ],
+        "periods": {
+          "young": {
+            "label": "青年军官",
+            "image": "assets/commanders/ghost/turnarounds/v1/young.png",
+            "width": 1536,
+            "height": 1024
+          },
+          "active": {
+            "label": "现役指挥官",
+            "image": "assets/commanders/ghost/turnarounds/v1/active.png",
+            "width": 1536,
+            "height": 1024
+          },
+          "veteran": {
+            "label": "资深指挥官",
+            "image": "assets/commanders/ghost/turnarounds/v1/veteran-r2.png",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        "archived_images": [
+          "assets/commanders/ghost/turnarounds/v1/veteran.png"
+        ],
+        "refinement_prompts": "docs/turnaround-refinement-prompts-v1.json",
+        "generator": "Codex built-in ImageGen"
+      },
+      "story": {
+        "status": "confirmed",
+        "identity": "human_ai_hybrid",
+        "origin": "professional_soldier",
+        "ai_role": "decision_support",
+        "implant": "ai_compute_chip",
+        "visual_period_mapping_status": "pending"
       }
     }
-  ]
+  ],
+  "story_bible": "docs/story-bible.md",
+  "mod_handoff": "docs/mod-story-handoff.md"
 }
